@@ -1,0 +1,50 @@
+<!-- <div class="toolbar" role="banner">
+    
+    <span>HMS</span>
+    <nav class="navbar navbar-dark bg-primary">
+      </nav>
+      <div class="spacer"></div>
+        <img
+      width="40"
+      alt="HMS"
+      src="../assets/Images/logout.png"
+    />
+  </div> -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" ><img
+        width="40"
+        alt="HMS"
+        src="../assets/Images/hms.jpg"
+      /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active" *ngFor="let menu of menuList">
+          <a class="nav-link"  (click)="routeme(menu.route)">{{menu.displayName}}<span class="sr-only">(current)</span></a>
+        </li>
+        <!-- <li class="nav-item active">
+            <a class="nav-link"  (click)="routeme('app/orderlist')">Orders List<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link"  (click)="routeme('app/tablebooking')">Tables<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link"  (click)="routeme('app/employee')">Employees<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link"  (click)="routeme('app/fooditem')">Food Items<span class="sr-only">(current)</span></a>
+          </li> -->
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <a class="loginuser" >Mahesh  </a>&nbsp;
+        <img
+        width="40"
+        alt="HMS"
+        src="../assets/Images/logout.png"
+      />   
+    </form>
+    </div>
+  </nav>
