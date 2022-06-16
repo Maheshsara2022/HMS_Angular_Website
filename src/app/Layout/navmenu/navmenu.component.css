@@ -1,6 +1,24 @@
-a{
+/* a{
     cursor: pointer;
 }
 .loginuser{
     color: white !important;
+} */
+.topPadding{
+    margin-top: 2%;
 }
+.menu-spacer {
+    flex: 1 1 auto;
+  }
+  
+  a:hover {
+    color: white !important; 
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 640px) {
+    a:hover {
+        color: #0056b3 !important; 
+        text-decoration: underline;
+    }
+    }
